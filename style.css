@@ -1,0 +1,199 @@
+/* all */
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+body{
+    text-align: center;
+    background-color:#ffffff;
+    width: 100vw; /*margin含まない*/
+    height: 100vh;
+}
+
+/* header */
+header {
+    position: relative;
+    margin: 2.5vh 2.5vw 0 2.5vw;
+    height: 30vh;
+    text-align: left;
+    background-color: blue;
+}
+.header-brackets {
+    position: relative;
+    display: inline-block;
+    background-color: #000000;
+    width: 50px;
+    height: 50px;
+}
+.header-brackets-mask {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    width: 50%;
+    height: 50%;
+}
+.header-brackets-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: #ffffff;
+    font-family: HelveticaNeue;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 4.4px;
+    text-align: left;
+}
+.header-brackets-text span {
+    color: #000000;
+}
+.header-sns {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.header-title {
+    /* サイズを指定していないので横一杯のブロック */
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 50vw;
+    display: inline-block;
+    text-align: left;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: 5.6px;
+    color: #000000;
+}
+.header-list {
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: 5.6px;
+    text-align: left;
+    color: #000000;
+}
+.header-list #Top {
+    width: 34px;
+    height: 16px;
+}
+.header-list #About {
+    width: 60px;
+    height: 16px;
+}
+.header-list #Works {
+    width: 62px;
+    height: 16px;
+}
+.header-list #Contact {
+    width: 83px;
+    height: 16px;
+}
+
+/* article */
+/*748px;  フォントサイズ×文字数ではないのはなぜ？→letter spacing? */
+/* ブロック要素とインライン要素の違い */
+/*行間ってどうやって測るの？*/
+/*どうやって一致させる？*/
+article {
+    position: relative;
+    margin: 0 2.5% 0 2.5%;
+    height: 40vh;
+    text-align: center;
+    background-color: red;
+}
+.top-title {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 16px;
+    text-align: left;
+    margin: auto;
+    color: #000000;
+}
+.top-title span {
+    letter-spacing: 1em;
+    margin-right: -1em;
+}
+.top-title a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: 2.8px;
+    text-align: left;
+    color: #363636;
+}
+
+/* footer */
+footer {
+    position: relative;
+    margin: 0 2.5% 2.5% 2.5%;
+    height: 30vh;
+    text-align: left;
+    background-color: yellow;
+}
+.footer-brackets {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    display: inline-block;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #000000;
+    width: 50px;
+    height: 50px;
+}
+.footer-brackets-mask {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    background-color: #ffffff;
+    border-style: solid;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+    width: 50%;
+    height: 50%;
+}
+.footer-rights {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 12px;
+    font-family: HelveticaNeue;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 1vh;
+  }
